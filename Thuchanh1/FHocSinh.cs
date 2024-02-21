@@ -32,7 +32,7 @@ namespace Thuchanh1
         private void btnAdd_Click(object sender, EventArgs e)
         {
     
-            HocSinh hocsinh = new HocSinh(txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value);
+            HocSinh hocsinh = new HocSinh(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text,dtpDoB.Value);
             HocSinhDAO.Add(hocsinh);
             Form1_Load(this, EventArgs.Empty);
         }
@@ -40,7 +40,7 @@ namespace Thuchanh1
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
-            HocSinh hocsinh = new HocSinh(txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value);
+            HocSinh hocsinh = new HocSinh(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value);
             HocSinhDAO.Delete(hocsinh);
             Form1_Load(this, EventArgs.Empty);
         }
@@ -48,7 +48,7 @@ namespace Thuchanh1
         private void btnEdit_Click(object sender, EventArgs e)
         {
 
-            HocSinh hocsinh = new HocSinh(txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value);
+            HocSinh hocsinh = new HocSinh(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value);
             HocSinhDAO.Edit(hocsinh);
             Form1_Load(this, EventArgs.Empty);
         }

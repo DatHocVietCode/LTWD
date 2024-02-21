@@ -17,12 +17,12 @@
   <Class Name="Thuchanh1.Person">
     <Position X="5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAAQAAAAEAAAAAIAAAACAIAAAACAAAAAAACAAA=</HashCode>
+      <HashCode>AAIAAAAAQCAAgEAgAAAIAAAACAIACAAiAAgAIAACAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Thuchanh1.HocSinhDAO">
-    <Position X="8.75" Y="7" Width="1.5" />
+    <Position X="8" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HocSinhDAO.cs</FileName>
@@ -36,7 +36,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Thuchanh1.PersonDAO">
-    <Position X="2" Y="4.75" Width="1.5" />
+    <Position X="5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAAA=</HashCode>
       <FileName>PersonDAO.cs</FileName>

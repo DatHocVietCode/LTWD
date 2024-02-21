@@ -12,7 +12,7 @@ namespace Thuchanh1
         {
         }
 
-        public GiaoVien(string fullname, string address, string cmnd, DateTime dob) : base(fullname, address, cmnd, dob)
+        public GiaoVien(string iD, string phone, string email, string gioitinh, string fullname, string address, string cmnd, DateTime dob) : base(iD, phone, email, gioitinh, fullname, address, cmnd, dob)
         {
         }
     }
