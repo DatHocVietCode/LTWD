@@ -64,5 +64,10 @@ namespace Thuchanh1
                 dtpDoB.Value = (DateTime)row.Cells[3].Value;
             }
         }
+
+        private void lblIdentifyNum_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

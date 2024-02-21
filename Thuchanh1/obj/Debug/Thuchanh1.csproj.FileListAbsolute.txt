@@ -12,3 +12,17 @@ D:\LTWD\Week1\Thuchanh1\Thuchanh1\obj\Debug\Thuchanh1.exe
 D:\LTWD\Week1\Thuchanh1\Thuchanh1\obj\Debug\Thuchanh1.pdb
 D:\LTWD\Week1\Thuchanh1\Thuchanh1\obj\Debug\Thuchanh1.FHocSinh.resources
 D:\LTWD\Week1\Thuchanh1\Thuchanh1\obj\Debug\Thuchanh1.FGiaoVien.resources
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\bin\Debug\Thuchanh1.exe.config
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\bin\Debug\Thuchanh1.exe
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\bin\Debug\Thuchanh1.pdb
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\bin\Debug\System.Data.SqlClient.dll
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\bin\Debug\System.Data.SqlClient.xml
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.AssemblyReference.cache
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.FHocSinh.resources
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.FGiaoVien.resources
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.Properties.Resources.resources
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.GenerateResource.cache
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.CoreCompileInputs.cache
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.CopyComplete
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.exe
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.pdb
