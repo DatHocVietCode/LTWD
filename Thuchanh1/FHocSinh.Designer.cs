@@ -49,6 +49,7 @@
             this.lblIdentifyNum = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.btn_reload = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gv1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -231,11 +232,22 @@
             this.lblName.TabIndex = 33;
             this.lblName.Text = "Ho va Ten";
             // 
+            // btn_reload
+            // 
+            this.btn_reload.Location = new System.Drawing.Point(713, 29);
+            this.btn_reload.Name = "btn_reload";
+            this.btn_reload.Size = new System.Drawing.Size(75, 23);
+            this.btn_reload.TabIndex = 66;
+            this.btn_reload.Text = "Reload";
+            this.btn_reload.UseVisualStyleBackColor = true;
+            this.btn_reload.Click += new System.EventHandler(this.btn_reload_Click);
+            // 
             // FHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_reload);
             this.Controls.Add(this.txt_gioitinh);
             this.Controls.Add(this.lbl_sex);
             this.Controls.Add(this.txt_phone);
@@ -289,6 +301,7 @@
         private System.Windows.Forms.Label lblIdentifyNum;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Button btn_reload;
     }
 }
 

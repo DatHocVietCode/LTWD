@@ -33,7 +33,7 @@ namespace Thuchanh1
     #endregion
 		
 		public Person_InformationDataContext() : 
-				base(global::Thuchanh1.Properties.Settings.Default.QLHocSinhConnectionString, mappingSource)
+				base(global::Thuchanh1.Properties.Settings.Default.QlyHS, mappingSource)
 		{
 			OnCreated();
 		}
@@ -62,14 +62,6 @@ namespace Thuchanh1
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<GiaoVien> GiaoViens
-		{
-			get
-			{
-				return this.GetTable<GiaoVien>();
-			}
-		}
-		
 		public System.Data.Linq.Table<HocSinh> HocSinhs
 		{
 			get
@@ -77,10 +69,18 @@ namespace Thuchanh1
 				return this.GetTable<HocSinh>();
 			}
 		}
+		
+		public System.Data.Linq.Table<GiaoVien> GiaoViens
+		{
+			get
+			{
+				return this.GetTable<GiaoVien>();
+			}
+		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.GiaoVien")]
-	public partial class GiaoVien
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HocSinh")]
+	public partial class HocSinh
 	{
 		
 		private string _ID;
@@ -99,11 +99,11 @@ namespace Thuchanh1
 		
 		private string _Phone;
 		
-		public GiaoVien()
+		public HocSinh()
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="NChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="NVarChar(MAX)")]
 		public string ID
 		{
 			get
@@ -232,8 +232,8 @@ namespace Thuchanh1
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HocSinh")]
-	public partial class HocSinh
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.GiaoVien")]
+	public partial class GiaoVien
 	{
 		
 		private string _ID;
@@ -252,11 +252,11 @@ namespace Thuchanh1
 		
 		private string _Phone;
 		
-		public HocSinh()
+		public GiaoVien()
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="NChar(10)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="NVarChar(MAX)")]
 		public string ID
 		{
 			get

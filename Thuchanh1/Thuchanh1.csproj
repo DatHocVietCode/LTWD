@@ -84,6 +84,9 @@
     <Compile Include="HocSinhDAO.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonDAO.cs" />
+    <Compile Include="Person_Information.cs">
+      <DependentUpon>Person_Information.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Person_Information.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

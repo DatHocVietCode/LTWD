@@ -59,16 +59,32 @@ namespace Thuchanh1
                 //gets a collection that contains all the rows
                 DataGridViewRow row = this.gv1.Rows[e.RowIndex];
                 //populate the textbox from specific value of the coordinates of column and row.
-                txtFullName.Text = row.Cells[0].Value.ToString();
-                txtAddress.Text = row.Cells[1].Value.ToString();
-                txtIdentifyNum.Text = row.Cells[2].Value.ToString();
-                dtpDoB.Value = (DateTime)row.Cells[3].Value;
+                txt_ID.Text = row.Cells[0].Value.ToString();
+                txtIdentifyNum.Text = row.Cells[1].Value.ToString();
+                txtFullName.Text = row.Cells[2].Value.ToString();
+                txt_gioitinh.Text = row.Cells[3].Value.ToString();
+                dtpDoB.Value = (DateTime)(row.Cells[4].Value);
+                txtAddress.Text = row.Cells[5].Value.ToString();
+                txt_email.Text = row.Cells[6].Value.ToString();
+                txt_phone.Text = row.Cells[7].Value.ToString();
             }
         }
         private void btnGiangVien_Click(object sender, EventArgs e)
         {
             FGiaoVien form = new FGiaoVien();
             form.Show();
+        }
+
+        private void btn_reload_Click(object sender, EventArgs e)
+        {
+            txt_ID.Clear();
+            txtFullName.Clear();
+            txtIdentifyNum.Clear();
+            txt_gioitinh.Clear();
+            txtAddress.Clear();
+            txt_email.Clear();
+            txt_phone.Clear();
+            MessageBox.Show("All textbox cleared!", "Notifycation");
         }
     }
 }

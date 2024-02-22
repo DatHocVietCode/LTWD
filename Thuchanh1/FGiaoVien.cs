@@ -69,5 +69,17 @@ namespace Thuchanh1
         {
 
         }
+
+        private void btn_reload_Click(object sender, EventArgs e)
+        {
+            txt_ID.Clear();
+            txtFullName.Clear();
+            txtIdentifyNum.Clear();
+            txt_gioitinh.Clear();
+            txtAddress.Clear();
+            txt_email.Clear();
+            txt_phone.Clear();
+            MessageBox.Show("All textbox cleared!", "Notifycation");
+        }
     }
 }
