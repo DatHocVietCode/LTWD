@@ -26,3 +26,4 @@ D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.CoreCompileInp
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.CopyComplete
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.exe
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.pdb
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.FLoc.resources

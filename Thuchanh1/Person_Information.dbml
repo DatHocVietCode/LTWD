@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHocSinh" Class="Person_InformationDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\mssqllocaldb;Initial Catalog=QLHocSinh;Integrated Security=True;Encrypt=True" SettingsObjectName="Thuchanh1.Properties.Settings" SettingsPropertyName="QlyHS" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.HocSinh" Member="HocSinhs">
-    <Type Name="HocSinh">
-      <Column Name="ID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="Cmnd" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Ten" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="Sex" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="DoB" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
-      <Column Name="Diachi" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-    </Type>
-  </Table>
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\mssqllocaldb;Initial Catalog=QLHocSinh;Integrated Security=True;Encrypt=True" SettingsObjectName="Thuchanh1.Properties.Settings" SettingsPropertyName="QLHocSinhConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.GiaoVien" Member="GiaoViens">
     <Type Name="GiaoVien">
       <Column Name="ID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
@@ -22,6 +10,19 @@
       <Column Name="Diachi" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
       <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HocSinh" Member="HocSinhs">
+    <Type Name="HocSinh">
+      <Column Name="ID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Cmnd" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Ten" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Sex" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DoB" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Diachi" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Single" DbType="Real" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

@@ -91,6 +91,15 @@ namespace Thuchanh1
                 return false; }
             return true;
         }
+        public static bool Check_Diem(double diem)
+        {
+            if (diem < 0 || diem >10)
+            {
+                System.Windows.Forms.MessageBox.Show("Your score is invalid!","Notice");
+                return false;
+            }
+            return true;
+        }
         public static bool Check_ID(string ID, string role)
         {
             if (ID == string.Empty)
@@ -176,7 +185,7 @@ namespace Thuchanh1
              return true;*/
             return (Check_ID(hocSinh_.ID1, "HocSinh") && (Check_CMND(hocSinh_.Cmnd)) &&
                 (Check_Name(hocSinh_.Fullname)) && (check_Sex(hocSinh_.Gioitinh)) && (Check_DoB(hocSinh_.Dob)) &&
-                (Check_Address(hocSinh_.Address)) && (Check_Email(hocSinh_.Email)) && (Check_phone(hocSinh_.Phone)));
+                (Check_Address(hocSinh_.Address)) && (Check_Email(hocSinh_.Email)) && (Check_phone(hocSinh_.Phone)) && Check_Diem(hocSinh_.Diem1));
         }
         
         public static DataTable Add(object person)
@@ -189,7 +198,7 @@ namespace Thuchanh1
                     sqlStr = "select * from GiaoVien";
                     return DBConnection.Process(sqlStr, "GiaoVien");
                 }
-                sqlStr = string.Format("INSERT INTO GiaoVien(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone) VALUES" +
+                sqlStr = string.Format("INSERT INTO GiaoVien(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone, Diem) VALUES" +
                  " ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')"
                  , ((GiaoVien_class)person).ID1, ((GiaoVien_class)person).Cmnd, ((GiaoVien_class)person).Fullname, ((GiaoVien_class)person).Gioitinh,
                  ((GiaoVien_class)person).Dob, ((GiaoVien_class)person).Address, ((GiaoVien_class)person).Email, ((GiaoVien_class)person).Phone);
@@ -204,10 +213,10 @@ namespace Thuchanh1
                     sqlStr = "select * from HocSinh";
                     return DBConnection.Process(sqlStr, "HocSinh");
                 }
-                sqlStr = string.Format("INSERT INTO HocSinh(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone) VALUES" +
+                sqlStr = string.Format("INSERT INTO HocSinh(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone, '{8}') VALUES" +
                    " ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')"
                  , ((HocSinh_class)person).ID1, ((HocSinh_class)person).Cmnd, ((HocSinh_class)person).Fullname, ((HocSinh_class)person).Gioitinh,
-                 ((HocSinh_class)person).Dob, ((HocSinh_class)person).Address, ((HocSinh_class)person).Email, ((HocSinh_class)person).Phone);
+                 ((HocSinh_class)person).Dob, ((HocSinh_class)person).Address, ((HocSinh_class)person).Email, ((HocSinh_class)person).Phone, ((HocSinh_class)person).Diem1);
                 return DBConnection.Process(sqlStr, "HocSinh");
             }
         }

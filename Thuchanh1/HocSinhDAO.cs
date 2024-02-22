@@ -31,5 +31,9 @@ namespace Thuchanh1
                string sqlStr = string.Format("DELETE FROM HocSinh WHERE Cmnd = '{0}'", hocsinh.Cmnd);
                return DBConnection.Process(sqlStr, "HocSinh");
            }*/
+        public static DataTable LocHocSinh(string option)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

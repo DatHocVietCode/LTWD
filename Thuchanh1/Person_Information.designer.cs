@@ -33,7 +33,7 @@ namespace Thuchanh1
     #endregion
 		
 		public Person_InformationDataContext() : 
-				base(global::Thuchanh1.Properties.Settings.Default.QlyHS, mappingSource)
+				base(global::Thuchanh1.Properties.Settings.Default.QLHocSinhConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -62,14 +62,6 @@ namespace Thuchanh1
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<HocSinh> HocSinhs
-		{
-			get
-			{
-				return this.GetTable<HocSinh>();
-			}
-		}
-		
 		public System.Data.Linq.Table<GiaoVien> GiaoViens
 		{
 			get
@@ -77,157 +69,12 @@ namespace Thuchanh1
 				return this.GetTable<GiaoVien>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HocSinh")]
-	public partial class HocSinh
-	{
 		
-		private string _ID;
-		
-		private string _Cmnd;
-		
-		private string _Ten;
-		
-		private string _Sex;
-		
-		private System.Nullable<System.DateTime> _DoB;
-		
-		private string _Diachi;
-		
-		private string _Email;
-		
-		private string _Phone;
-		
-		public HocSinh()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="NVarChar(MAX)")]
-		public string ID
+		public System.Data.Linq.Table<HocSinh> HocSinhs
 		{
 			get
 			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this._ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cmnd", DbType="VarChar(100)")]
-		public string Cmnd
-		{
-			get
-			{
-				return this._Cmnd;
-			}
-			set
-			{
-				if ((this._Cmnd != value))
-				{
-					this._Cmnd = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ten", DbType="VarChar(100)")]
-		public string Ten
-		{
-			get
-			{
-				return this._Ten;
-			}
-			set
-			{
-				if ((this._Ten != value))
-				{
-					this._Ten = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sex", DbType="NChar(10)")]
-		public string Sex
-		{
-			get
-			{
-				return this._Sex;
-			}
-			set
-			{
-				if ((this._Sex != value))
-				{
-					this._Sex = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DoB", DbType="DateTime2")]
-		public System.Nullable<System.DateTime> DoB
-		{
-			get
-			{
-				return this._DoB;
-			}
-			set
-			{
-				if ((this._DoB != value))
-				{
-					this._DoB = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diachi", DbType="VarChar(255)")]
-		public string Diachi
-		{
-			get
-			{
-				return this._Diachi;
-			}
-			set
-			{
-				if ((this._Diachi != value))
-				{
-					this._Diachi = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(50)")]
-		public string Email
-		{
-			get
-			{
-				return this._Email;
-			}
-			set
-			{
-				if ((this._Email != value))
-				{
-					this._Email = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Phone", DbType="VarChar(50)")]
-		public string Phone
-		{
-			get
-			{
-				return this._Phone;
-			}
-			set
-			{
-				if ((this._Phone != value))
-				{
-					this._Phone = value;
-				}
+				return this.GetTable<HocSinh>();
 			}
 		}
 	}
@@ -380,6 +227,177 @@ namespace Thuchanh1
 				if ((this._Phone != value))
 				{
 					this._Phone = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HocSinh")]
+	public partial class HocSinh
+	{
+		
+		private string _ID;
+		
+		private string _Cmnd;
+		
+		private string _Ten;
+		
+		private string _Sex;
+		
+		private System.Nullable<System.DateTime> _DoB;
+		
+		private string _Diachi;
+		
+		private string _Email;
+		
+		private string _Phone;
+		
+		private System.Nullable<float> _Diem;
+		
+		public HocSinh()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="NVarChar(MAX)")]
+		public string ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cmnd", DbType="VarChar(100)")]
+		public string Cmnd
+		{
+			get
+			{
+				return this._Cmnd;
+			}
+			set
+			{
+				if ((this._Cmnd != value))
+				{
+					this._Cmnd = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ten", DbType="VarChar(100)")]
+		public string Ten
+		{
+			get
+			{
+				return this._Ten;
+			}
+			set
+			{
+				if ((this._Ten != value))
+				{
+					this._Ten = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sex", DbType="NChar(10)")]
+		public string Sex
+		{
+			get
+			{
+				return this._Sex;
+			}
+			set
+			{
+				if ((this._Sex != value))
+				{
+					this._Sex = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DoB", DbType="DateTime2")]
+		public System.Nullable<System.DateTime> DoB
+		{
+			get
+			{
+				return this._DoB;
+			}
+			set
+			{
+				if ((this._DoB != value))
+				{
+					this._DoB = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diachi", DbType="VarChar(255)")]
+		public string Diachi
+		{
+			get
+			{
+				return this._Diachi;
+			}
+			set
+			{
+				if ((this._Diachi != value))
+				{
+					this._Diachi = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(50)")]
+		public string Email
+		{
+			get
+			{
+				return this._Email;
+			}
+			set
+			{
+				if ((this._Email != value))
+				{
+					this._Email = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Phone", DbType="VarChar(50)")]
+		public string Phone
+		{
+			get
+			{
+				return this._Phone;
+			}
+			set
+			{
+				if ((this._Phone != value))
+				{
+					this._Phone = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diem", DbType="Real")]
+		public System.Nullable<float> Diem
+		{
+			get
+			{
+				return this._Diem;
+			}
+			set
+			{
+				if ((this._Diem != value))
+				{
+					this._Diem = value;
 				}
 			}
 		}

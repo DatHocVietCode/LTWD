@@ -50,6 +50,9 @@
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.btn_reload = new System.Windows.Forms.Button();
+            this.btn_loc = new System.Windows.Forms.Button();
+            this.txt_diem = new System.Windows.Forms.TextBox();
+            this.lbl_diem = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gv1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +69,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(108, 397);
+            this.btnAdd.Location = new System.Drawing.Point(52, 397);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 9;
@@ -76,7 +79,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(267, 397);
+            this.btnDelete.Location = new System.Drawing.Point(211, 397);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 10;
@@ -86,7 +89,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(426, 397);
+            this.btnEdit.Location = new System.Drawing.Point(370, 397);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 11;
@@ -96,7 +99,7 @@
             // 
             // btnGiangVien
             // 
-            this.btnGiangVien.Location = new System.Drawing.Point(602, 397);
+            this.btnGiangVien.Location = new System.Drawing.Point(671, 397);
             this.btnGiangVien.Name = "btnGiangVien";
             this.btnGiangVien.Size = new System.Drawing.Size(101, 23);
             this.btnGiangVien.TabIndex = 12;
@@ -106,7 +109,7 @@
             // 
             // txt_gioitinh
             // 
-            this.txt_gioitinh.Location = new System.Drawing.Point(207, 179);
+            this.txt_gioitinh.Location = new System.Drawing.Point(201, 150);
             this.txt_gioitinh.Name = "txt_gioitinh";
             this.txt_gioitinh.Size = new System.Drawing.Size(100, 22);
             this.txt_gioitinh.TabIndex = 48;
@@ -114,7 +117,7 @@
             // lbl_sex
             // 
             this.lbl_sex.AutoSize = true;
-            this.lbl_sex.Location = new System.Drawing.Point(65, 185);
+            this.lbl_sex.Location = new System.Drawing.Point(59, 156);
             this.lbl_sex.Name = "lbl_sex";
             this.lbl_sex.Size = new System.Drawing.Size(54, 16);
             this.lbl_sex.TabIndex = 47;
@@ -122,21 +125,21 @@
             // 
             // txt_phone
             // 
-            this.txt_phone.Location = new System.Drawing.Point(207, 336);
+            this.txt_phone.Location = new System.Drawing.Point(201, 307);
             this.txt_phone.Name = "txt_phone";
             this.txt_phone.Size = new System.Drawing.Size(100, 22);
             this.txt_phone.TabIndex = 46;
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(207, 296);
+            this.txt_email.Location = new System.Drawing.Point(201, 267);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(100, 22);
             this.txt_email.TabIndex = 45;
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(207, 59);
+            this.txt_ID.Location = new System.Drawing.Point(201, 30);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 22);
             this.txt_ID.TabIndex = 44;
@@ -144,7 +147,7 @@
             // lbl_Phone
             // 
             this.lbl_Phone.AutoSize = true;
-            this.lbl_Phone.Location = new System.Drawing.Point(65, 339);
+            this.lbl_Phone.Location = new System.Drawing.Point(59, 310);
             this.lbl_Phone.Name = "lbl_Phone";
             this.lbl_Phone.Size = new System.Drawing.Size(46, 16);
             this.lbl_Phone.TabIndex = 43;
@@ -153,7 +156,7 @@
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
-            this.lbl_email.Location = new System.Drawing.Point(65, 299);
+            this.lbl_email.Location = new System.Drawing.Point(59, 270);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(41, 16);
             this.lbl_email.TabIndex = 42;
@@ -162,7 +165,7 @@
             // lbl_ID
             // 
             this.lbl_ID.AutoSize = true;
-            this.lbl_ID.Location = new System.Drawing.Point(65, 59);
+            this.lbl_ID.Location = new System.Drawing.Point(59, 30);
             this.lbl_ID.Name = "lbl_ID";
             this.lbl_ID.Size = new System.Drawing.Size(20, 16);
             this.lbl_ID.TabIndex = 41;
@@ -170,28 +173,28 @@
             // 
             // dtpDoB
             // 
-            this.dtpDoB.Location = new System.Drawing.Point(189, 217);
+            this.dtpDoB.Location = new System.Drawing.Point(183, 188);
             this.dtpDoB.Name = "dtpDoB";
             this.dtpDoB.Size = new System.Drawing.Size(200, 22);
             this.dtpDoB.TabIndex = 40;
             // 
             // txtIdentifyNum
             // 
-            this.txtIdentifyNum.Location = new System.Drawing.Point(207, 97);
+            this.txtIdentifyNum.Location = new System.Drawing.Point(201, 68);
             this.txtIdentifyNum.Name = "txtIdentifyNum";
             this.txtIdentifyNum.Size = new System.Drawing.Size(100, 22);
             this.txtIdentifyNum.TabIndex = 39;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(207, 254);
+            this.txtAddress.Location = new System.Drawing.Point(201, 225);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(100, 22);
             this.txtAddress.TabIndex = 38;
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(207, 135);
+            this.txtFullName.Location = new System.Drawing.Point(201, 106);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(100, 22);
             this.txtFullName.TabIndex = 37;
@@ -199,7 +202,7 @@
             // lblDoB
             // 
             this.lblDoB.AutoSize = true;
-            this.lblDoB.Location = new System.Drawing.Point(37, 222);
+            this.lblDoB.Location = new System.Drawing.Point(31, 193);
             this.lblDoB.Name = "lblDoB";
             this.lblDoB.Size = new System.Drawing.Size(132, 16);
             this.lblDoB.TabIndex = 36;
@@ -208,7 +211,7 @@
             // lblIdentifyNum
             // 
             this.lblIdentifyNum.AutoSize = true;
-            this.lblIdentifyNum.Location = new System.Drawing.Point(65, 103);
+            this.lblIdentifyNum.Location = new System.Drawing.Point(59, 74);
             this.lblIdentifyNum.Name = "lblIdentifyNum";
             this.lblIdentifyNum.Size = new System.Drawing.Size(47, 16);
             this.lblIdentifyNum.TabIndex = 35;
@@ -217,7 +220,7 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(65, 257);
+            this.lblAddress.Location = new System.Drawing.Point(59, 228);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(48, 16);
             this.lblAddress.TabIndex = 34;
@@ -226,7 +229,7 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(65, 141);
+            this.lblName.Location = new System.Drawing.Point(59, 112);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(70, 16);
             this.lblName.TabIndex = 33;
@@ -242,11 +245,40 @@
             this.btn_reload.UseVisualStyleBackColor = true;
             this.btn_reload.Click += new System.EventHandler(this.btn_reload_Click);
             // 
+            // btn_loc
+            // 
+            this.btn_loc.Location = new System.Drawing.Point(517, 397);
+            this.btn_loc.Name = "btn_loc";
+            this.btn_loc.Size = new System.Drawing.Size(75, 23);
+            this.btn_loc.TabIndex = 67;
+            this.btn_loc.Text = "Loc";
+            this.btn_loc.UseVisualStyleBackColor = true;
+            this.btn_loc.Click += new System.EventHandler(this.btn_loc_Click);
+            // 
+            // txt_diem
+            // 
+            this.txt_diem.Location = new System.Drawing.Point(201, 351);
+            this.txt_diem.Name = "txt_diem";
+            this.txt_diem.Size = new System.Drawing.Size(100, 22);
+            this.txt_diem.TabIndex = 69;
+            // 
+            // lbl_diem
+            // 
+            this.lbl_diem.AutoSize = true;
+            this.lbl_diem.Location = new System.Drawing.Point(59, 354);
+            this.lbl_diem.Name = "lbl_diem";
+            this.lbl_diem.Size = new System.Drawing.Size(39, 16);
+            this.lbl_diem.TabIndex = 68;
+            this.lbl_diem.Text = "Diem";
+            // 
             // FHocSinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txt_diem);
+            this.Controls.Add(this.lbl_diem);
+            this.Controls.Add(this.btn_loc);
             this.Controls.Add(this.btn_reload);
             this.Controls.Add(this.txt_gioitinh);
             this.Controls.Add(this.lbl_sex);
@@ -302,6 +334,9 @@
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btn_reload;
+        private System.Windows.Forms.Button btn_loc;
+        private System.Windows.Forms.TextBox txt_diem;
+        private System.Windows.Forms.Label lbl_diem;
     }
 }
 
