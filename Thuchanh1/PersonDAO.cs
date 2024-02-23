@@ -131,7 +131,7 @@ namespace Thuchanh1
                 {
                    /* System.Windows.Forms.MessageBox.Show(s.ID);
                     System.Windows.Forms.MessageBox.Show(ID);*/
-                    if ((string)s.ID == ID)
+                    if (s.ID == ID)
                     {
                         System.Windows.Forms.MessageBox.Show("The ID has already exist! Please change to another ID!", "Notice");
                         return false;
@@ -198,7 +198,7 @@ namespace Thuchanh1
                     sqlStr = "select * from GiaoVien";
                     return DBConnection.Process(sqlStr, "GiaoVien");
                 }
-                sqlStr = string.Format("INSERT INTO GiaoVien(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone, Diem) VALUES" +
+                sqlStr = string.Format("INSERT INTO GiaoVien(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone) VALUES" +
                  " ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')"
                  , ((GiaoVien_class)person).ID1, ((GiaoVien_class)person).Cmnd, ((GiaoVien_class)person).Fullname, ((GiaoVien_class)person).Gioitinh,
                  ((GiaoVien_class)person).Dob, ((GiaoVien_class)person).Address, ((GiaoVien_class)person).Email, ((GiaoVien_class)person).Phone);
@@ -213,8 +213,8 @@ namespace Thuchanh1
                     sqlStr = "select * from HocSinh";
                     return DBConnection.Process(sqlStr, "HocSinh");
                 }
-                sqlStr = string.Format("INSERT INTO HocSinh(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone, '{8}') VALUES" +
-                   " ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')"
+                sqlStr = string.Format("INSERT INTO HocSinh(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone, Diem) VALUES" +
+                   " ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')"
                  , ((HocSinh_class)person).ID1, ((HocSinh_class)person).Cmnd, ((HocSinh_class)person).Fullname, ((HocSinh_class)person).Gioitinh,
                  ((HocSinh_class)person).Dob, ((HocSinh_class)person).Address, ((HocSinh_class)person).Email, ((HocSinh_class)person).Phone, ((HocSinh_class)person).Diem1);
                 return DBConnection.Process(sqlStr, "HocSinh");

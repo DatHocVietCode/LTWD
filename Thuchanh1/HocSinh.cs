@@ -8,16 +8,16 @@ namespace Thuchanh1
 {
     class HocSinh_class : Person
     {
-        double Diem;
+        float Diem;
         public HocSinh_class()
         {
         }
 
-        public HocSinh_class(string iD, string phone, string email, string gioitinh, string fullname, string address, string cmnd, DateTime dob, double diem) : base(iD, phone, email, gioitinh, fullname, address, cmnd, dob)
+        public HocSinh_class(string iD, string phone, string email, string gioitinh, string fullname, string address, string cmnd, DateTime dob, float diem) : base(iD, phone, email, gioitinh, fullname, address, cmnd, dob)
         {
             Diem1 = diem;
         }
 
-        public double Diem1 { get => Diem; set => Diem = value; }
+        public float Diem1 { get => Diem; set => Diem = value; }
     }
 }

@@ -28,9 +28,9 @@ namespace Thuchanh1.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=QLHocSinh;Integrated Security=" +
             "True")]
-        public string QlyHS {
+        public string ConnStr {
             get {
-                return ((string)(this["QlyHS"]));
+                return ((string)(this["ConnStr"]));
             }
         }
         
@@ -38,7 +38,7 @@ namespace Thuchanh1.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=QLHocSinh;Integrated Security=" +
-            "True;Encrypt=True")]
+            "True;Trust Server Certificate=True")]
         public string QLHocSinhConnectionString {
             get {
                 return ((string)(this["QLHocSinhConnectionString"]));

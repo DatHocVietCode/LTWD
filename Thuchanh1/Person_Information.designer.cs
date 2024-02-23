@@ -33,7 +33,7 @@ namespace Thuchanh1
     #endregion
 		
 		public Person_InformationDataContext() : 
-				base(global::Thuchanh1.Properties.Settings.Default.QLHocSinhConnectionString, mappingSource)
+				base(global::Thuchanh1.Properties.Settings.Default.ConnStr, mappingSource)
 		{
 			OnCreated();
 		}
@@ -252,7 +252,7 @@ namespace Thuchanh1
 		
 		private string _Phone;
 		
-		private System.Nullable<float> _Diem;
+		private System.Nullable<double> _Diem;
 		
 		public HocSinh()
 		{
@@ -386,8 +386,8 @@ namespace Thuchanh1
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diem", DbType="Real")]
-		public System.Nullable<float> Diem
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Diem", DbType="Float")]
+		public System.Nullable<double> Diem
 		{
 			get
 			{

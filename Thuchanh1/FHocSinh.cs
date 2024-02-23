@@ -31,7 +31,7 @@ namespace Thuchanh1
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text,dtpDoB.Value, int.Parse(txt_diem.Text));
+            HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text,dtpDoB.Value, float.Parse(txt_diem.Text));
             HocSinhDAO.Add(hocsinh);
             Form1_Load(this, EventArgs.Empty);
         }
@@ -39,7 +39,7 @@ namespace Thuchanh1
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
-            HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value, int.Parse(txt_diem.Text));
+            HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value, float.Parse(txt_diem.Text));
             HocSinhDAO.Delete(hocsinh);
             Form1_Load(this, EventArgs.Empty);
         }
@@ -47,7 +47,7 @@ namespace Thuchanh1
         private void btnEdit_Click(object sender, EventArgs e)
         {
 
-            HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value, int.Parse(txt_diem.Text));
+            HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value, float.Parse(txt_diem.Text));
             //HocSinhDAO.Edit(hocsinh);
             Form1_Load(this, EventArgs.Empty);
         }

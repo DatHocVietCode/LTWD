@@ -27,6 +27,7 @@ namespace Thuchanh1
             }
             finally
             {
+
                 SQLConnection.conn.Close();
             }
             return dtSinhVien;

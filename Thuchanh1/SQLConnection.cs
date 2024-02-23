@@ -9,7 +9,6 @@ namespace Thuchanh1
 {
     public static class SQLConnection
     {
-        public static SqlConnection conn = new
-        SqlConnection(Properties.Settings.Default.QlyHS);
+        public static SqlConnection conn = new SqlConnection(Properties.Settings.Default.ConnStr);
     }
 }
