@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Thuchanh1
 {
@@ -18,6 +19,42 @@ namespace Thuchanh1
             {
                 SQLConnection.conn.Open();
                 string sqlStr = string.Format("select * from " + DBName);
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, SQLConnection.conn);
+                adapter.Fill(dtSinhVien);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
+            finally
+            {
+
+                SQLConnection.conn.Close();
+            }
+            return dtSinhVien;
+        }
+        public static DataTable DBLoad_after_filtering(string option)
+        {
+            string condition = "";
+            switch (option)
+            {
+                case "Option 1":
+                    condition = "where Diem>=8";
+                    break;
+                case "Option 2":
+                    condition = "where Diem>=5 and Diem<8";
+                    break;
+                case "Option 3":
+                    condition = "where Diem<5";
+                    break;
+                default:
+                    break;
+            }
+            DataTable dtSinhVien = new DataTable();
+            try
+            {
+                SQLConnection.conn.Open();
+                string sqlStr = string.Format("select * from HocSinh " + condition);
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, SQLConnection.conn);
                 adapter.Fill(dtSinhVien);
             }

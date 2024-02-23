@@ -91,7 +91,7 @@ namespace Thuchanh1
             FLoc fLoc = new FLoc();
             fLoc.ShowDialog();
             string option = fLoc.Return_Option();
-            //MessageBox.Show(option);
+            UpdateDataGridView(DBConnection.DBLoad_after_filtering(option));
 
         }
     }
