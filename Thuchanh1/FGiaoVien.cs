@@ -22,7 +22,7 @@ namespace Thuchanh1
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            UpdateDataGridView(DBConnection.DBLoad("GiaoVien"));
+            UpdateDataGridView(DBConnection.DBLoad("GiaoVien",""));
         }
         private void UpdateDataGridView(DataTable dataTable)
         {
@@ -47,7 +47,7 @@ namespace Thuchanh1
         private void btnEdit_Click(object sender, EventArgs e)
         {
             GiaoVien_class giaoVien = new GiaoVien_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value);
-            //GiaoVienDAO.Edit(giaoVien);
+            GiaoVienDAO.Edit(giaoVien);
             Form2_Load(this, EventArgs.Empty);
 
         }

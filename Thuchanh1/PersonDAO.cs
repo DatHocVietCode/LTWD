@@ -220,33 +220,37 @@ namespace Thuchanh1
                 return DBConnection.Process(sqlStr, "HocSinh");
             }
         }
-       /* public static DataTable Edit(object person)
+        public static DataTable Edit(object person)
         {
             if (person.GetType() == typeof(GiaoVien))
             {
-                string sqlStr = string.Format("UPDATE GiaoVien SET Ten = '{0}', Diachi = '{1}', DoB = '{2}'" +
-                     " WHERE Cmnd = '{3}'", ((GiaoVien)person).Fullname, ((GiaoVien)person).Address, ((GiaoVien)person).Dob, ((GiaoVien)person).Cmnd);
+                string sqlStr = string.Format("UPDATE GiaoVien SET CMND = '{1}', Ten = '{2}', Sex = '{3}', DoB = '{4}', DiaChi = '{5}', Email = '{6}', Phone = '{7}'" +
+                     " WHERE ID = '{0}'", ((GiaoVien_class)person).ID1, ((GiaoVien_class)person).Cmnd, ((GiaoVien_class)person).Fullname,
+                     ((GiaoVien_class)person).Gioitinh, ((GiaoVien_class)person).Dob
+                     , ((GiaoVien_class)person).Address, ((GiaoVien_class)person).Email, ((GiaoVien_class)person).Phone);
                 return DBConnection.Process(sqlStr, "GiaoVien");
             }
             else
             {
-                string sqlStr = string.Format("UPDATE HocSinh SET Ten = '{0}', Diachi = '{1}', DoB = '{2}'" +
-                     " WHERE Cmnd = '{3}'", ((HocSinh)person).Fullname, ((HocSinh)person).Address, ((HocSinh)person).Dob, ((HocSinh)person).Cmnd);
+                string sqlStr = string.Format("UPDATE HocSinh SET CMND = '{1}', Ten = '{2}', Sex = '{3}', DoB = '{4}', DiaChi = '{5}', Email = '{6}', Phone = '{7}', Diem = '{8}'" +
+                     " WHERE ID = '{0}'", ((HocSinh_class)person).ID1, ((HocSinh_class)person).Cmnd, ((HocSinh_class)person).Fullname,
+                     ((HocSinh_class)person).Gioitinh, ((HocSinh_class)person).Dob
+                     , ((HocSinh_class)person).Address, ((HocSinh_class)person).Email, ((HocSinh_class)person).Phone, ((HocSinh_class)person).Diem1);
                 return DBConnection.Process(sqlStr, "HocSinh");
             }
-           
-        }*/
+
+        }
         public static DataTable Delete(object person)
         {
             if (person.GetType() == typeof(GiaoVien))
             {
-                string sqlStr = string.Format("DELETE FROM GiaoVien WHERE Cmnd = '{0}'", ((GiaoVien)person).Cmnd);
+                string sqlStr = string.Format("DELETE FROM GiaoVien WHERE ID = '{0}'", ((GiaoVien_class)person).ID1);
                 return DBConnection.Process(sqlStr, "GiaoVien");
               
             }
             else
             {
-                string sqlStr = string.Format("DELETE FROM HocSinh WHERE Cmnd = '{0}'", ((HocSinh)person).Cmnd);
+                string sqlStr = string.Format("DELETE FROM HocSinh WHERE ID = '{0}'", ((HocSinh_class)person).ID1);
                 return DBConnection.Process(sqlStr, "HocSinh");
             }
         }

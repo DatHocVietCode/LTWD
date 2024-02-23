@@ -22,7 +22,7 @@ namespace Thuchanh1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            UpdateDataGridView(DBConnection.DBLoad("HocSinh"));
+            UpdateDataGridView(DBConnection.DBLoad("HocSinh", ""));
           
         }
         private void UpdateDataGridView(DataTable dataTable)
@@ -48,7 +48,7 @@ namespace Thuchanh1
         {
 
             HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text, txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value, float.Parse(txt_diem.Text));
-            //HocSinhDAO.Edit(hocsinh);
+            HocSinhDAO.Edit(hocsinh);
             Form1_Load(this, EventArgs.Empty);
         }
         private void gv1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -66,6 +66,7 @@ namespace Thuchanh1
                 txtAddress.Text = row.Cells[5].Value.ToString();
                 txt_email.Text = row.Cells[6].Value.ToString();
                 txt_phone.Text = row.Cells[7].Value.ToString();
+                txt_diem.Text = row.Cells[8].Value.ToString();
             }
         }
         private void btnGiangVien_Click(object sender, EventArgs e)
@@ -83,6 +84,7 @@ namespace Thuchanh1
             txtAddress.Clear();
             txt_email.Clear();
             txt_phone.Clear();
+            txt_diem.Clear();
             MessageBox.Show("All textbox cleared!", "Notifycation");
         }
 
@@ -91,7 +93,7 @@ namespace Thuchanh1
             FLoc fLoc = new FLoc();
             fLoc.ShowDialog();
             string option = fLoc.Return_Option();
-            UpdateDataGridView(DBConnection.DBLoad_after_filtering(option));
+            UpdateDataGridView(DBConnection.DBLoad("HocSinh",option));
 
         }
     }

@@ -7,18 +7,34 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Thuchanh1
 {
     internal class DBConnection
     {
-        public static DataTable DBLoad(string DBName)
+        public static DataTable DBLoad(string DBName, string option)
         {
+            string condition = string.Empty;
+            switch (option)
+            {
+                case "Option 1":
+                    condition = " where Diem>=8";
+                    break;
+                case "Option 2":
+                    condition = " where Diem>=5 and Diem<8";
+                    break;
+                case "Option 3":
+                    condition = " where Diem<5";
+                    break;
+                default:
+                    break;
+            }
             DataTable dtSinhVien = new DataTable();
             try
             {
                 SQLConnection.conn.Open();
-                string sqlStr = string.Format("select * from " + DBName);
+                string sqlStr = string.Format("select * from " + DBName + condition);
                 SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, SQLConnection.conn);
                 adapter.Fill(dtSinhVien);
             }
@@ -33,7 +49,7 @@ namespace Thuchanh1
             }
             return dtSinhVien;
         }
-        public static DataTable DBLoad_after_filtering(string option)
+      /*  public static DataTable DBLoad_after_filtering(string option)
         {
             string condition = "";
             switch (option)
@@ -68,7 +84,7 @@ namespace Thuchanh1
                 SQLConnection.conn.Close();
             }
             return dtSinhVien;
-        }
+        }*/
         public static DataTable Process(string command, string DBName)
         {
             try
@@ -88,7 +104,7 @@ namespace Thuchanh1
                 SQLConnection.conn.Close();
 
             }
-            return DBLoad(DBName);
+            return DBLoad(DBName,"");
         }
     }
 }
