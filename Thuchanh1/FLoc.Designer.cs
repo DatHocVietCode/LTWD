@@ -33,6 +33,7 @@
             this.rb_5 = new System.Windows.Forms.RadioButton();
             this.lbl_title = new System.Windows.Forms.Label();
             this.btn_OK = new System.Windows.Forms.Button();
+            this.rb4_koloc = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // rb1_8
@@ -60,7 +61,7 @@
             // rb_5
             // 
             this.rb_5.AutoSize = true;
-            this.rb_5.Location = new System.Drawing.Point(147, 165);
+            this.rb_5.Location = new System.Drawing.Point(147, 163);
             this.rb_5.Name = "rb_5";
             this.rb_5.Size = new System.Drawing.Size(83, 20);
             this.rb_5.TabIndex = 2;
@@ -79,7 +80,7 @@
             // 
             // btn_OK
             // 
-            this.btn_OK.Location = new System.Drawing.Point(294, 181);
+            this.btn_OK.Location = new System.Drawing.Point(299, 237);
             this.btn_OK.Name = "btn_OK";
             this.btn_OK.Size = new System.Drawing.Size(82, 23);
             this.btn_OK.TabIndex = 4;
@@ -88,11 +89,23 @@
             this.btn_OK.Visible = false;
             this.btn_OK.Click += new System.EventHandler(this.btn_OK_Click);
             // 
+            // rb4_koloc
+            // 
+            this.rb4_koloc.AutoSize = true;
+            this.rb4_koloc.Location = new System.Drawing.Point(147, 206);
+            this.rb4_koloc.Name = "rb4_koloc";
+            this.rb4_koloc.Size = new System.Drawing.Size(87, 20);
+            this.rb4_koloc.TabIndex = 5;
+            this.rb4_koloc.TabStop = true;
+            this.rb4_koloc.Text = "Khong loc";
+            this.rb4_koloc.UseVisualStyleBackColor = true;
+            // 
             // FLoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(388, 216);
+            this.ClientSize = new System.Drawing.Size(393, 272);
+            this.Controls.Add(this.rb4_koloc);
             this.Controls.Add(this.btn_OK);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.rb_5);
@@ -113,5 +126,6 @@
         private System.Windows.Forms.RadioButton rb_5;
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.Button btn_OK;
+        private System.Windows.Forms.RadioButton rb4_koloc;
     }
 }

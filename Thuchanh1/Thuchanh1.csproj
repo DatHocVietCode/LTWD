@@ -102,6 +102,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="SQLConnection.cs" />
+    <Compile Include="UCThongtin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCThongtin.Designer.cs">
+      <DependentUpon>UCThongtin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FHocSinh.resx">
       <DependentUpon>FHocSinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +126,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UCThongtin.resx">
+      <DependentUpon>UCThongtin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Person_Information.dbml">

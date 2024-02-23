@@ -34,9 +34,14 @@ namespace Thuchanh1
                 return "Option 2";
 
             }
-            else
+            else if (rb_5.Checked)
             {
                 return "Option 3";
+               
+            }
+            else
+            {
+                return option;
             }
         }
 
