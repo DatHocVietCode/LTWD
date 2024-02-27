@@ -35,9 +35,9 @@
             // 
             // btnGiangVien
             // 
-            this.btnGiangVien.Location = new System.Drawing.Point(649, 397);
+            this.btnGiangVien.Location = new System.Drawing.Point(657, 389);
             this.btnGiangVien.Name = "btnGiangVien";
-            this.btnGiangVien.Size = new System.Drawing.Size(101, 23);
+            this.btnGiangVien.Size = new System.Drawing.Size(111, 38);
             this.btnGiangVien.TabIndex = 12;
             this.btnGiangVien.Text = "GiangVien";
             this.btnGiangVien.UseVisualStyleBackColor = true;

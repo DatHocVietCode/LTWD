@@ -23,8 +23,8 @@ D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.FGiaoVien.resources
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.Properties.Resources.resources
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.GenerateResource.cache
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.CoreCompileInputs.cache
-D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.CopyComplete
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.exe
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.pdb
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.FLoc.resources
 D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.UCThongtin.resources
+D:\LTWD\Week1\BaiTapTheoTuan\Thuchanh1\obj\Debug\Thuchanh1.csproj.Up2Date

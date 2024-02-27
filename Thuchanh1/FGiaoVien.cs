@@ -13,11 +13,13 @@ namespace Thuchanh1
 {
     public partial class FGiaoVien : Form
     {
-        /*SqlConnection conn = new
-        SqlConnection(Properties.Settings.Default.QlyHS);*/
         public FGiaoVien()
         {
             InitializeComponent();
+            ucThongtin1.btnAdd.Click += BtnAdd_Click;
+            ucThongtin1.btnEdit.Click += BtnEdit_Click;
+            ucThongtin1.btnDelete.Click += BtnDelete_Click;
+            ucThongtin1.gv1.CellClick += Gv1_CellClick;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -25,11 +27,8 @@ namespace Thuchanh1
             UpdateDataGridView(DBConnection.DBLoad("GiaoVien",""));
             ucThongtin1.lbl_Diem.Visible = false;
             ucThongtin1.txt_Diem.Visible = false;
-            ucThongtin1.btnAdd.Click += BtnAdd_Click;
-            ucThongtin1.btnEdit.Click += BtnEdit_Click;
-            ucThongtin1.btnDelete.Click += BtnDelete_Click;
-            ucThongtin1.gv1.CellClick += Gv1_CellClick;
-            ucThongtin1.btn_reload.Click += Btn_reload_Click;
+
+          
         }
         private void Gv1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -37,6 +36,10 @@ namespace Thuchanh1
             {
                 //gets a collection that contains all the rows
                 DataGridViewRow row = this.ucThongtin1.gv1.Rows[e.RowIndex];
+                if (row.Cells[0].Value.ToString() == "")
+                {
+                    return;
+                }
                 //populate the textbox from specific value of the coordinates of column and row.
                 ucThongtin1.txt_ID.Text = row.Cells[0].Value.ToString();
                 ucThongtin1.txtIdentifyNum.Text = row.Cells[1].Value.ToString();
@@ -46,40 +49,44 @@ namespace Thuchanh1
                 ucThongtin1.txtAddress.Text = row.Cells[5].Value.ToString();
                 ucThongtin1.txt_email.Text = row.Cells[6].Value.ToString();
                 ucThongtin1.txt_phone.Text = row.Cells[7].Value.ToString();
-                //ucThongtin1.txt_Diem.Text = row.Cells[8].Value.ToString();
             }
         }
-        private void Btn_reload_Click(object sender, EventArgs e)
-        {
-            ucThongtin1.txt_ID.Clear();
-            ucThongtin1.txtFullName.Clear();
-            ucThongtin1.txtIdentifyNum.Clear();
-            ucThongtin1.txt_gioitinh.Clear();
-            ucThongtin1.txtAddress.Clear();
-            ucThongtin1.txt_email.Clear();
-            ucThongtin1.txt_phone.Clear();
-            ucThongtin1.txt_Diem.Clear();
-            MessageBox.Show("All textbox cleared!", "Notifycation");
-        }
-
         private void BtnDelete_Click(object sender, EventArgs e)
         {
-            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
-            GiaoVienDAO.Delete(giaoVien);
+            string ID = ucThongtin1.txt_ID.Text;
+            PersonDAO.Delete(ID, "GiaoVien");
             Form2_Load(this, EventArgs.Empty);
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
-            GiaoVienDAO.Edit(giaoVien);
+            if (!GiaoVienDAO.Check_input(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
+                      ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                      ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text))
+            {
+                MessageBox.Show("You can not let the input empty or your score is invalid!", "Notification");
+                return;
+            }
+            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
+                ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, 
+                ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
+            GiaoVienDAO.EditGiaoVien(giaoVien);
             Form2_Load(this, EventArgs.Empty);
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
-            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
-            GiaoVienDAO.Add(giaoVien);
+            if (!GiaoVienDAO.Check_input(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
+                     ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                     ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text))
+            {
+                MessageBox.Show("You can not let the input empty or your score is invalid!", "Notification");
+                return;
+            }
+            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
+                ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, 
+                ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
+            GiaoVienDAO.AddGiaoVien(giaoVien);
             Form2_Load(this, EventArgs.Empty);
         }
 
@@ -87,44 +94,6 @@ namespace Thuchanh1
         {
             ucThongtin1.gv1.DataSource = dataTable;
         }
- /*       private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.   txtFullName.Text, ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text,    ucThongtin1.    dtpDoB.Value);
-            GiaoVienDAO.Add(giaoVien);
-            Form2_Load(this, EventArgs.Empty);
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
-            GiaoVienDAO.Delete(giaoVien);
-            Form2_Load(this, EventArgs.Empty);
-
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, ucThongtin1.  txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
-            GiaoVienDAO.Edit(giaoVien);
-            Form2_Load(this, EventArgs.Empty);
-
-        }*/
-
-      /*  private void gv1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                //gets a collection that contains all the rows
-                DataGridViewRow row = this.gv1.Rows[e.RowIndex];
-                //populate the textbox from specific value of the coordinates of column and row.
-                txtFullName.Text = row.Cells[0].Value.ToString();
-                txtAddress.Text = row.Cells[1].Value.ToString();
-                txtIdentifyNum.Text = row.Cells[2].Value.ToString();
-                dtpDoB.Value = (DateTime)row.Cells[3].Value;
-            }
-        }*/
-
         private void lblIdentifyNum_Click(object sender, EventArgs e)
         {
 
@@ -141,7 +110,6 @@ namespace Thuchanh1
             ucThongtin1.txt_phone.Clear();
             MessageBox.Show("All textbox cleared!", "Notifycation");
         }
-
         private void ucThongtin1_Load(object sender, EventArgs e)
         {
 

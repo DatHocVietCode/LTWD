@@ -10,7 +10,7 @@
   <Class Name="Thuchanh1.HocSinh_class" Collapsed="true">
     <Position X="3.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAA=</HashCode>
       <FileName>HocSinh.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,7 +24,7 @@
   <Class Name="Thuchanh1.HocSinhDAO">
     <Position X="10.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HocSinhDAO.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,12 +38,12 @@
   <Class Name="Thuchanh1.PersonDAO" Collapsed="true">
     <Position X="8.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAABAAAAAAAAAAAAAAAAAEAAAAAAEAIAAAQAAA=</HashCode>
+      <HashCode>AAIAAACAhAAAAAAAAAAAAgAEAAEAAAACAEAICQAQAAA=</HashCode>
       <FileName>PersonDAO.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Thuchanh1.SQLConnection">
-    <Position X="7" Y="4.5" Width="1.5" />
+    <Position X="5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>SQLConnection.cs</FileName>

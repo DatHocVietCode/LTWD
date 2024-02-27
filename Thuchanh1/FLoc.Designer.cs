@@ -41,10 +41,10 @@
             this.rb1_8.AutoSize = true;
             this.rb1_8.Location = new System.Drawing.Point(147, 59);
             this.rb1_8.Name = "rb1_8";
-            this.rb1_8.Size = new System.Drawing.Size(90, 20);
+            this.rb1_8.Size = new System.Drawing.Size(125, 20);
             this.rb1_8.TabIndex = 0;
             this.rb1_8.TabStop = true;
-            this.rb1_8.Text = " Diem >= 8";
+            this.rb1_8.Text = " Diem >= 8 (Giỏi)";
             this.rb1_8.UseVisualStyleBackColor = true;
             // 
             // rb2_8_5
@@ -52,10 +52,10 @@
             this.rb2_8_5.AutoSize = true;
             this.rb2_8_5.Location = new System.Drawing.Point(147, 111);
             this.rb2_8_5.Name = "rb2_8_5";
-            this.rb2_8_5.Size = new System.Drawing.Size(107, 20);
+            this.rb2_8_5.Size = new System.Drawing.Size(141, 20);
             this.rb2_8_5.TabIndex = 1;
             this.rb2_8_5.TabStop = true;
-            this.rb2_8_5.Text = " 5 <= Diem <8";
+            this.rb2_8_5.Text = " 5 <= Diem <8 (Khá)";
             this.rb2_8_5.UseVisualStyleBackColor = true;
             // 
             // rb_5
@@ -63,10 +63,10 @@
             this.rb_5.AutoSize = true;
             this.rb_5.Location = new System.Drawing.Point(147, 163);
             this.rb_5.Name = "rb_5";
-            this.rb_5.Size = new System.Drawing.Size(83, 20);
+            this.rb_5.Size = new System.Drawing.Size(118, 20);
             this.rb_5.TabIndex = 2;
             this.rb_5.TabStop = true;
-            this.rb_5.Text = " Diem < 5";
+            this.rb_5.Text = " Diem < 5 (Yếu)";
             this.rb_5.UseVisualStyleBackColor = true;
             // 
             // lbl_title
@@ -94,10 +94,10 @@
             this.rb4_koloc.AutoSize = true;
             this.rb4_koloc.Location = new System.Drawing.Point(147, 206);
             this.rb4_koloc.Name = "rb4_koloc";
-            this.rb4_koloc.Size = new System.Drawing.Size(87, 20);
+            this.rb4_koloc.Size = new System.Drawing.Size(165, 20);
             this.rb4_koloc.TabIndex = 5;
             this.rb4_koloc.TabStop = true;
-            this.rb4_koloc.Text = "Khong loc";
+            this.rb4_koloc.Text = "Khong loc (Giữ nguyên)";
             this.rb4_koloc.UseVisualStyleBackColor = true;
             // 
             // FLoc

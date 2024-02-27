@@ -53,14 +53,7 @@ namespace Thuchanh1
         {
             gv1.DataSource = dataTable;
         }
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            /*HocSinh_class hocsinh = new HocSinh_class(txt_ID.Text, txt_phone.Text, txt_email.Text, txt_gioitinh.Text, txtFullName.Text,
-             txtAddress.Text, txtIdentifyNum.Text, dtpDoB.Value, float.Parse(txt_Diem.Text));
-            HocSinhDAO.Add(hocsinh);
-            UCThongtin_Load(this, EventArgs.Empty);*/
-        }
-
+    
         private void gv1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -69,6 +62,19 @@ namespace Thuchanh1
         private void txt_Diem_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_reload_Click(object sender, EventArgs e)
+        {
+            txt_ID.Clear();
+            txtFullName.Clear();
+            txtIdentifyNum.Clear();
+            txt_gioitinh.Clear();
+            txtAddress.Clear();
+            txt_email.Clear();
+            txt_phone.Clear();
+            txt_Diem.Clear();
+            MessageBox.Show("All textbox cleared!", "Notification");
         }
     }
 }

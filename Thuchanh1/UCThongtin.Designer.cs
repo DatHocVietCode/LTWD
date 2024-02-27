@@ -62,6 +62,7 @@
             this.btn_reload.TabIndex = 86;
             this.btn_reload.Text = "Reload";
             this.btn_reload.UseVisualStyleBackColor = true;
+            this.btn_reload.Click += new System.EventHandler(this.btn_reload_Click);
             // 
             // txt_gioitinh
             // 
@@ -217,7 +218,7 @@
             this.btnAdd.TabIndex = 67;
             this.btnAdd.Text = "Them";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+
             // 
             // gv1
             // 

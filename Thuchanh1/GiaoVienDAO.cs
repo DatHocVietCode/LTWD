@@ -9,24 +9,33 @@ namespace Thuchanh1
 {
     internal class GiaoVienDAO : PersonDAO
     {
-        /*  public static DataTable AddGiaoVien(GiaoVien giaovien)
-          {
-              string sqlStr = string.Format("INSERT INTO GiaoVien(Ten , Diachi, Cmnd, DoB) VALUES" +
-                      " ('{0}', '{1}', '{2}', '{3}')"
-                      , giaovien.Fullname, giaovien.Address, giaovien.Cmnd, giaovien.Dob);
-              return DBConnection.Process(sqlStr, "GiaoVien");
+        public static bool Check_input(string t1, string t2, string t3, string t4, string t5, string t6, string t7)
+        {
+           
+            return Check_state_1(t1,t2,t3,t4,t5,t6,t7);
+        }
+        public static DataTable AddGiaoVien(GiaoVien_class giaovien)
+        {
+            string sqlStr = string.Empty;
+            if (!Check_Information(giaovien))
+            {
+                sqlStr = "select * from GiaoVien";
+                return DBConnection.Process(sqlStr, "GiaoVien");
+            }
+            sqlStr = string.Format("INSERT INTO GiaoVien(ID, Cmnd, Ten, Sex, DoB, Diachi, Email, Phone) VALUES" +
+             " ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')"
+             , giaovien.ID1, giaovien.Cmnd, giaovien.Fullname, giaovien.Gioitinh,
+             giaovien.Dob, giaovien.Address, giaovien.Email, giaovien.Phone);
+            return DBConnection.Process(sqlStr, "GiaoVien");
 
-          }
-          public static DataTable EditGiaoVien(GiaoVien giaovien)
-          {
-              string sqlStr = string.Format("UPDATE GiaoVien SET Ten = '{0}', Diachi = '{1}', DoB = '{2}'" +
-                      " WHERE Cmnd = '{3}'", giaovien.Fullname, giaovien.Address, giaovien.Dob, giaovien.Cmnd);
-              return DBConnection.Process(sqlStr, "GiaoVien");
-          }
-          public static DataTable DeleteGiaoVien(GiaoVien giaovien)
-          {
-              string sqlStr = string.Format("DELETE FROM GiaoVien WHERE Cmnd = '{0}'", giaovien.Cmnd);
-              return DBConnection.Process(sqlStr, "GiaoVien");
-          }*/
+        }
+        public static DataTable EditGiaoVien(GiaoVien_class giaovien)
+        {
+            string sqlStr = string.Format("UPDATE GiaoVien SET CMND = '{1}', Ten = '{2}', Sex = '{3}', DoB = '{4}', DiaChi = '{5}', Email = '{6}', Phone = '{7}'" +
+                     " WHERE ID = '{0}'", giaovien.ID1, giaovien.Cmnd, giaovien.Fullname,
+                     giaovien.Gioitinh, giaovien.Dob
+                     , giaovien.Address, giaovien.Email, giaovien.Phone);
+            return DBConnection.Process(sqlStr, "GiaoVien");
+        }
     }
 }
