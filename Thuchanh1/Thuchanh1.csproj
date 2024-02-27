@@ -66,18 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConnection.cs" />
-    <Compile Include="FHocSinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FHocSinh.Designer.cs">
-      <DependentUpon>FHocSinh.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FGiaoVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FGiaoVien.Designer.cs">
-      <DependentUpon>FGiaoVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="FLoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,12 +96,6 @@
     <Compile Include="UCThongtin.Designer.cs">
       <DependentUpon>UCThongtin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FHocSinh.resx">
-      <DependentUpon>FHocSinh.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FGiaoVien.resx">
-      <DependentUpon>FGiaoVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FLoc.resx">
       <DependentUpon>FLoc.cs</DependentUpon>
     </EmbeddedResource>

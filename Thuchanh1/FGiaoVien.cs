@@ -44,7 +44,7 @@ namespace Thuchanh1
                 ucThongtin1.txt_ID.Text = row.Cells[0].Value.ToString();
                 ucThongtin1.txtIdentifyNum.Text = row.Cells[1].Value.ToString();
                 ucThongtin1.txtFullName.Text = row.Cells[2].Value.ToString();
-                ucThongtin1.txt_gioitinh.Text = row.Cells[3].Value.ToString();
+                ucThongtin1.//row.Cells[3].Value.ToString();
                 ucThongtin1.dtpDoB.Value = (DateTime)(row.Cells[4].Value);
                 ucThongtin1.txtAddress.Text = row.Cells[5].Value.ToString();
                 ucThongtin1.txt_email.Text = row.Cells[6].Value.ToString();

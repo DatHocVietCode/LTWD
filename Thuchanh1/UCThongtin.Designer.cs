@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btn_reload = new System.Windows.Forms.Button();
-            this.txt_gioitinh = new System.Windows.Forms.TextBox();
             this.lbl_sex = new System.Windows.Forms.Label();
             this.txt_phone = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
@@ -51,6 +50,7 @@
             this.gv1 = new System.Windows.Forms.DataGridView();
             this.lbl_Diem = new System.Windows.Forms.Label();
             this.txt_Diem = new System.Windows.Forms.TextBox();
+            this.cb_gioitinh = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gv1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,13 +63,6 @@
             this.btn_reload.Text = "Reload";
             this.btn_reload.UseVisualStyleBackColor = true;
             this.btn_reload.Click += new System.EventHandler(this.btn_reload_Click);
-            // 
-            // txt_gioitinh
-            // 
-            this.txt_gioitinh.Location = new System.Drawing.Point(177, 149);
-            this.txt_gioitinh.Name = "txt_gioitinh";
-            this.txt_gioitinh.Size = new System.Drawing.Size(100, 22);
-            this.txt_gioitinh.TabIndex = 85;
             // 
             // lbl_sex
             // 
@@ -218,7 +211,6 @@
             this.btnAdd.TabIndex = 67;
             this.btnAdd.Text = "Them";
             this.btnAdd.UseVisualStyleBackColor = true;
-
             // 
             // gv1
             // 
@@ -251,14 +243,26 @@
             this.txt_Diem.Visible = false;
             this.txt_Diem.TextChanged += new System.EventHandler(this.txt_Diem_TextChanged);
             // 
+            // cb_gioitinh
+            // 
+            this.cb_gioitinh.FormattingEnabled = true;
+            this.cb_gioitinh.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Unknown"});
+            this.cb_gioitinh.Location = new System.Drawing.Point(173, 147);
+            this.cb_gioitinh.Name = "cb_gioitinh";
+            this.cb_gioitinh.Size = new System.Drawing.Size(121, 24);
+            this.cb_gioitinh.TabIndex = 89;
+            // 
             // UCThongtin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cb_gioitinh);
             this.Controls.Add(this.txt_Diem);
             this.Controls.Add(this.lbl_Diem);
             this.Controls.Add(this.btn_reload);
-            this.Controls.Add(this.txt_gioitinh);
             this.Controls.Add(this.lbl_sex);
             this.Controls.Add(this.txt_phone);
             this.Controls.Add(this.txt_email);
@@ -290,7 +294,6 @@
         #endregion
 
         public System.Windows.Forms.Button btn_reload;
-        public System.Windows.Forms.TextBox txt_gioitinh;
         public System.Windows.Forms.Label lbl_sex;
         public System.Windows.Forms.TextBox txt_phone;
         public System.Windows.Forms.TextBox txt_email;
@@ -312,5 +315,6 @@
         public System.Windows.Forms.DataGridView gv1;
         public System.Windows.Forms.Label lbl_Diem;
         public System.Windows.Forms.TextBox txt_Diem;
+        private System.Windows.Forms.ComboBox cb_gioitinh;
     }
 }

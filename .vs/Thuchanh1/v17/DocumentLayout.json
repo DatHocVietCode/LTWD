@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\ucthongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|d:\\ltwd\\week1\\baitaptheotuan\\thuchanh1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|d:\\ltwd\\week1\\baitaptheotuan\\thuchanh1\\ucthongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\ucthongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\ucthongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\ucthongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\persondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,28 +23,8 @@
       "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\giaoviendao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\fgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\fgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\fhocsinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\fhocsinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\fgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\fgiaovien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\fhocsinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\fhocsinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|d:\\ltwd\\week1\\baitaptheotuan\\thuchanh1\\hocsinhdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\hocsinhdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\hocsinhdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\ucthongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|solutionrelative:thuchanh1\\ucthongtin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FB3C2A8-7825-40CE-949B-F0DD72FB9F84}|Thuchanh1\\Thuchanh1.csproj|D:\\LTWD\\Week1\\BaiTapTheoTuan\\thuchanh1\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,7 +63,7 @@
         },
         {
           "DockedWidth": 211,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,58 +71,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FHocSinh.cs [Design]",
-              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FHocSinh.cs",
-              "RelativeDocumentMoniker": "Thuchanh1\\FHocSinh.cs",
-              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FHocSinh.cs [Design]",
-              "RelativeToolTip": "Thuchanh1\\FHocSinh.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\Program.cs",
+              "RelativeDocumentMoniker": "Thuchanh1\\Program.cs",
+              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\Program.cs",
+              "RelativeToolTip": "Thuchanh1\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T16:34:05.363Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonDAO.cs",
-              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\PersonDAO.cs",
-              "RelativeDocumentMoniker": "Thuchanh1\\PersonDAO.cs",
-              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\PersonDAO.cs",
-              "RelativeToolTip": "Thuchanh1\\PersonDAO.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC4AAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T16:34:15.879Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HocSinhDAO.cs",
-              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\HocSinhDAO.cs",
-              "RelativeDocumentMoniker": "Thuchanh1\\HocSinhDAO.cs",
-              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\HocSinhDAO.cs",
-              "RelativeToolTip": "Thuchanh1\\HocSinhDAO.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAiwBMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T15:54:57.61Z",
+              "WhenOpened": "2024-02-27T17:20:59.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FHocSinh.cs",
-              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FHocSinh.cs",
-              "RelativeDocumentMoniker": "Thuchanh1\\FHocSinh.cs",
-              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FHocSinh.cs",
-              "RelativeToolTip": "Thuchanh1\\FHocSinh.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAADgv1sAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T15:39:24.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "GiaoVienDAO.cs",
               "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\GiaoVienDAO.cs",
               "RelativeDocumentMoniker": "Thuchanh1\\GiaoVienDAO.cs",
@@ -142,25 +92,24 @@
               "RelativeToolTip": "Thuchanh1\\GiaoVienDAO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T14:16:19.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-27T14:16:19.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "UCThongtin.cs",
               "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\UCThongtin.cs",
               "RelativeDocumentMoniker": "Thuchanh1\\UCThongtin.cs",
               "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\UCThongtin.cs",
               "RelativeToolTip": "Thuchanh1\\UCThongtin.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAA+wDcAAAAEAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAiwEcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-23T06:24:00.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UCThongtin.cs [Design]",
               "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\UCThongtin.cs",
               "RelativeDocumentMoniker": "Thuchanh1\\UCThongtin.cs",
@@ -173,31 +122,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FGiaoVien.cs",
-              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FGiaoVien.cs",
-              "RelativeDocumentMoniker": "Thuchanh1\\FGiaoVien.cs",
-              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FGiaoVien.cs",
-              "RelativeToolTip": "Thuchanh1\\FGiaoVien.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAUwFQAAAANAAAA",
+              "Title": "HocSinhDAO.cs",
+              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\HocSinhDAO.cs",
+              "RelativeDocumentMoniker": "Thuchanh1\\HocSinhDAO.cs",
+              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\HocSinhDAO.cs",
+              "RelativeToolTip": "Thuchanh1\\HocSinhDAO.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAiwBMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T15:37:00.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-27T15:54:57.61Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FGiaoVien.cs [Design]",
-              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FGiaoVien.cs",
-              "RelativeDocumentMoniker": "Thuchanh1\\FGiaoVien.cs",
-              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\FGiaoVien.cs [Design]",
-              "RelativeToolTip": "Thuchanh1\\FGiaoVien.cs [Design]",
+              "Title": "PersonDAO.cs",
+              "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\PersonDAO.cs",
+              "RelativeDocumentMoniker": "Thuchanh1\\PersonDAO.cs",
+              "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\PersonDAO.cs",
+              "RelativeToolTip": "Thuchanh1\\PersonDAO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC4AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T15:54:45.845Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-02-22T16:34:15.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\DBConnection.cs",
               "RelativeDocumentMoniker": "Thuchanh1\\DBConnection.cs",
@@ -205,24 +153,22 @@
               "RelativeToolTip": "Thuchanh1\\DBConnection.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAawDIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T05:04:09.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T05:04:09.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "UCThongtin.resx",
               "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\UCThongtin.resx",
               "RelativeDocumentMoniker": "Thuchanh1\\UCThongtin.resx",
               "ToolTip": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\UCThongtin.resx",
               "RelativeToolTip": "Thuchanh1\\UCThongtin.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-02-23T06:26:32.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T06:26:32.759Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "Thuchanh1",
               "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\Thuchanh1.csproj",
               "RelativeDocumentMoniker": "Thuchanh1\\Thuchanh1.csproj",
@@ -233,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "Person_Information.cs",
               "DocumentMoniker": "D:\\LTWD\\Week1\\BaiTapTheoTuan\\Thuchanh1\\Person_Information.cs",
               "RelativeDocumentMoniker": "Thuchanh1\\Person_Information.cs",
