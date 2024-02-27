@@ -69,7 +69,8 @@ namespace Thuchanh1
             txt_ID.Clear();
             txtFullName.Clear();
             txtIdentifyNum.Clear();
-            //txt_gioitinh.Clear();
+            cb_gioitinh.SelectedItem = null;
+            cb_gioitinh.Text = "";
             txtAddress.Clear();
             txt_email.Clear();
             txt_phone.Clear();

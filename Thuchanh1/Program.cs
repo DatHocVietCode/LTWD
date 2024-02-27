@@ -16,7 +16,7 @@ namespace Thuchanh1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FHocSinh());
+            Application.Run(new FHocSinh());
         }
     }
 }

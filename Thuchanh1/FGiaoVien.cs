@@ -44,7 +44,7 @@ namespace Thuchanh1
                 ucThongtin1.txt_ID.Text = row.Cells[0].Value.ToString();
                 ucThongtin1.txtIdentifyNum.Text = row.Cells[1].Value.ToString();
                 ucThongtin1.txtFullName.Text = row.Cells[2].Value.ToString();
-                ucThongtin1.//row.Cells[3].Value.ToString();
+                ucThongtin1.cb_gioitinh.SelectedItem = row.Cells[3].Value.ToString().Trim();
                 ucThongtin1.dtpDoB.Value = (DateTime)(row.Cells[4].Value);
                 ucThongtin1.txtAddress.Text = row.Cells[5].Value.ToString();
                 ucThongtin1.txt_email.Text = row.Cells[6].Value.ToString();
@@ -61,14 +61,14 @@ namespace Thuchanh1
         private void BtnEdit_Click(object sender, EventArgs e)
         {
             if (!GiaoVienDAO.Check_input(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
-                      ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                      ucThongtin1.txt_email.Text,ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text,
                       ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text))
             {
                 MessageBox.Show("You can not let the input empty or your score is invalid!", "Notification");
                 return;
             }
             GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
-                ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, 
+                ucThongtin1.txt_email.Text, ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text, 
                 ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
             GiaoVienDAO.EditGiaoVien(giaoVien);
             Form2_Load(this, EventArgs.Empty);
@@ -77,14 +77,14 @@ namespace Thuchanh1
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             if (!GiaoVienDAO.Check_input(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
-                     ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                     ucThongtin1.txt_email.Text, ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text,
                      ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text))
             {
                 MessageBox.Show("You can not let the input empty or your score is invalid!", "Notification");
                 return;
             }
             GiaoVien_class giaoVien = new GiaoVien_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
-                ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text, 
+                ucThongtin1.txt_email.Text, ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text, 
                 ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value);
             GiaoVienDAO.AddGiaoVien(giaoVien);
             Form2_Load(this, EventArgs.Empty);
@@ -97,18 +97,6 @@ namespace Thuchanh1
         private void lblIdentifyNum_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btn_reload_Click(object sender, EventArgs e)
-        {
-            ucThongtin1.txt_ID.Clear();
-            ucThongtin1.txtFullName.Clear();
-            ucThongtin1.txtIdentifyNum.Clear();
-            ucThongtin1.txt_gioitinh.Clear();
-            ucThongtin1.txtAddress.Clear();
-            ucThongtin1.txt_email.Clear();
-            ucThongtin1.txt_phone.Clear();
-            MessageBox.Show("All textbox cleared!", "Notifycation");
         }
         private void ucThongtin1_Load(object sender, EventArgs e)
         {

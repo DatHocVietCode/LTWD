@@ -28,13 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ucThongtin1 = new Thuchanh1.UCThongtin();
             this.SuspendLayout();
+            // 
+            // ucThongtin1
+            // 
+            this.ucThongtin1.Location = new System.Drawing.Point(-2, 12);
+            this.ucThongtin1.Name = "ucThongtin1";
+            this.ucThongtin1.Size = new System.Drawing.Size(803, 423);
+            this.ucThongtin1.TabIndex = 0;
             // 
             // FGiaoVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ucThongtin1);
             this.Name = "FGiaoVien";
             this.Text = "FGiaoVien";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -43,5 +52,7 @@
         }
 
         #endregion
+
+        private UCThongtin ucThongtin1;
     }
 }

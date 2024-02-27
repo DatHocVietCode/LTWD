@@ -315,6 +315,6 @@
         public System.Windows.Forms.DataGridView gv1;
         public System.Windows.Forms.Label lbl_Diem;
         public System.Windows.Forms.TextBox txt_Diem;
-        private System.Windows.Forms.ComboBox cb_gioitinh;
+        public System.Windows.Forms.ComboBox cb_gioitinh;
     }
 }

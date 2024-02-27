@@ -49,7 +49,7 @@ namespace Thuchanh1
                     ucThongtin1.txt_ID.Text = row.Cells[0].Value.ToString();
                     ucThongtin1.txtIdentifyNum.Text = row.Cells[1].Value.ToString();
                     ucThongtin1.txtFullName.Text = row.Cells[2].Value.ToString();
-                    ucThongtin1.txt_gioitinh.Text = row.Cells[3].Value.ToString();
+                    ucThongtin1.cb_gioitinh.SelectedItem = row.Cells[3].Value.ToString().Trim();
                     ucThongtin1.dtpDoB.Value = (DateTime)(row.Cells[4].Value);
                     ucThongtin1.txtAddress.Text = row.Cells[5].Value.ToString();
                     ucThongtin1.txt_email.Text = row.Cells[6].Value.ToString();
@@ -74,14 +74,14 @@ namespace Thuchanh1
         private void BtnEdit_Click(object sender, EventArgs e)
         {
             if (!HocSinhDAO.Check_input(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
-                        ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                        ucThongtin1.txt_email.Text, ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text,
                         ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.txt_Diem.Text))
             {
                 MessageBox.Show("You can not let the input empty or your score is invalid!", "Notification");
                 return;
             }
             HocSinh_class hocsinh = new HocSinh_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, 
-                        ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                        ucThongtin1.txt_email.Text, ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text,
                         ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value, 
                         float.Parse(ucThongtin1.txt_Diem.Text));
             HocSinhDAO.EditHocSinh(hocsinh);
@@ -91,14 +91,14 @@ namespace Thuchanh1
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             if (!HocSinhDAO.Check_input(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text,
-                       ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                       ucThongtin1.txt_email.Text, ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text,
                        ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.txt_Diem.Text))
             {
                 MessageBox.Show("You can not let the input empty or your score is invalid!", "Notification");
                 return;
             }
             HocSinh_class hocsinh = new HocSinh_class(ucThongtin1.txt_ID.Text, ucThongtin1.txt_phone.Text, 
-                        ucThongtin1.txt_email.Text, ucThongtin1.txt_gioitinh.Text, ucThongtin1.txtFullName.Text,
+                        ucThongtin1.txt_email.Text, ucThongtin1.cb_gioitinh.SelectedItem.ToString(), ucThongtin1.txtFullName.Text,
                         ucThongtin1.txtAddress.Text, ucThongtin1.txtIdentifyNum.Text, ucThongtin1.dtpDoB.Value, 
                         float.Parse(ucThongtin1.txt_Diem.Text));
             HocSinhDAO.AddHocSinh(hocsinh);
