@@ -12,14 +12,14 @@ namespace Thuchanh1
     {
         public static bool Check_phone(string s)
         {
-            if (s.Length !=10 || s[0]!='0')
+            if (s.Length !=12 || s[0]!='0')
             {
                 System.Windows.Forms.MessageBox.Show("Your phone number is invalid", "Notice");
                 return false;
             }
             foreach (var c in s)
             {
-                if (c >= '0' && c <= '9')
+                if ((c >= '0' && c <= '9') || (c=='-'))
                     continue;
                 else
                 {
@@ -134,14 +134,14 @@ namespace Thuchanh1
         }
         public static bool Check_Information(GiaoVien_class giaoVien)
         {
-            return (Check_ID(giaoVien.ID1,"GiaoVien") && (Check_CMND(giaoVien.Cmnd)) &&
+            return ((Check_CMND(giaoVien.Cmnd)) &&
                 (Check_Name(giaoVien.Fullname)) && (check_Sex(giaoVien.Gioitinh)) && (Check_DoB(giaoVien.Dob)) && 
                 (Check_Address(giaoVien.Address)) && (Check_Email(giaoVien.Email)) && (Check_phone(giaoVien.Phone)));
         }
       
         public static bool Check_Information(HocSinh_class hocSinh_)
         {
-            return (Check_ID(hocSinh_.ID1, "HocSinh") && (Check_CMND(hocSinh_.Cmnd)) &&
+            return ((Check_CMND(hocSinh_.Cmnd)) &&
                 (Check_Name(hocSinh_.Fullname)) && (check_Sex(hocSinh_.Gioitinh)) && (Check_DoB(hocSinh_.Dob)) &&
                 (Check_Address(hocSinh_.Address)) && (Check_Email(hocSinh_.Email)) && (Check_phone(hocSinh_.Phone)) 
                 && Check_Diem(hocSinh_.Diem1));

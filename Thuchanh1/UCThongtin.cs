@@ -15,29 +15,9 @@ namespace Thuchanh1
         public UCThongtin()
         {
             InitializeComponent();
+            mtxt_phone.Mask = "000-0000-000";
+            cb_gioitinh.SelectedItem = "Unknown";
         }
-
-       /* private void gv1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                //gets a collection that contains all the rows
-                DataGridViewRow row = this.gv1.Rows[e.RowIndex];
-                //populate the textbox from specific value of the coordinates of column and row.
-                txt_ID.Text = row.Cells[0].Value.ToString();
-                txtIdentifyNum.Text = row.Cells[1].Value.ToString();
-                txtFullName.Text = row.Cells[2].Value.ToString();
-                txt_gioitinh.Text = row.Cells[3].Value.ToString();
-                dtpDoB.Value = (DateTime)(row.Cells[4].Value);
-                txtAddress.Text = row.Cells[5].Value.ToString();
-                txt_email.Text = row.Cells[6].Value.ToString();
-                txt_phone.Text = row.Cells[7].Value.ToString();
-                //MessageBox.Show(e,row);
-                //if)
-                    txt_Diem.Text = row.Cells[8].Value.ToString();
-            }
-        }*/
-
         private void lbl_Diem_VisibleChanged(object sender, EventArgs e)
         {
 
@@ -69,13 +49,17 @@ namespace Thuchanh1
             txt_ID.Clear();
             txtFullName.Clear();
             txtIdentifyNum.Clear();
-            cb_gioitinh.SelectedItem = null;
-            cb_gioitinh.Text = "";
+            cb_gioitinh.SelectedItem = "Unknown";
             txtAddress.Clear();
             txt_email.Clear();
-            txt_phone.Clear();
+            mtxt_phone.Clear();
             txt_Diem.Clear();
             MessageBox.Show("All textbox cleared!", "Notification");
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+             
         }
     }
 }

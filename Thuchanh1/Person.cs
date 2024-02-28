@@ -16,11 +16,9 @@ namespace Thuchanh1
         string address = string.Empty;
         string cmnd = string.Empty;
         DateTime dob = DateTime.MinValue;
-
         public Person()
         {
         }
-
         public Person(string iD, string phone, string email, string gioitinh, string fullname, string address, string cmnd, DateTime dob)
         {
             ID1 = iD;
@@ -32,12 +30,10 @@ namespace Thuchanh1
             this.cmnd = cmnd;
             this.dob = dob;
         }
-
         public string Fullname { get => fullname; set => fullname = value; }
         public string Address { get => address; set => address = value; }
         public string Cmnd { get => cmnd; set => cmnd = value; }
         public DateTime Dob { get => dob; set => dob = value; }
-       
         public string Phone { get => phone; set => phone = value; }
         public string Email { get => email; set => email = value; }
         public string Gioitinh { get => gioitinh; set => gioitinh = value; }

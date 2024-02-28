@@ -30,7 +30,6 @@
         {
             this.btn_reload = new System.Windows.Forms.Button();
             this.lbl_sex = new System.Windows.Forms.Label();
-            this.txt_phone = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.lbl_Phone = new System.Windows.Forms.Label();
@@ -51,12 +50,15 @@
             this.lbl_Diem = new System.Windows.Forms.Label();
             this.txt_Diem = new System.Windows.Forms.TextBox();
             this.cb_gioitinh = new System.Windows.Forms.ComboBox();
+            this.mtxt_phone = new System.Windows.Forms.MaskedTextBox();
+            this.lbl_title = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gv1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_reload
             // 
-            this.btn_reload.Location = new System.Drawing.Point(694, 14);
+            this.btn_reload.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_reload.Location = new System.Drawing.Point(706, 53);
             this.btn_reload.Name = "btn_reload";
             this.btn_reload.Size = new System.Drawing.Size(75, 23);
             this.btn_reload.TabIndex = 86;
@@ -67,29 +69,22 @@
             // lbl_sex
             // 
             this.lbl_sex.AutoSize = true;
-            this.lbl_sex.Location = new System.Drawing.Point(35, 155);
+            this.lbl_sex.Location = new System.Drawing.Point(33, 186);
             this.lbl_sex.Name = "lbl_sex";
             this.lbl_sex.Size = new System.Drawing.Size(54, 16);
             this.lbl_sex.TabIndex = 84;
-            this.lbl_sex.Text = "Gioi tinh";
-            // 
-            // txt_phone
-            // 
-            this.txt_phone.Location = new System.Drawing.Point(177, 306);
-            this.txt_phone.Name = "txt_phone";
-            this.txt_phone.Size = new System.Drawing.Size(100, 22);
-            this.txt_phone.TabIndex = 83;
+            this.lbl_sex.Text = "Giới tính";
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(177, 266);
+            this.txt_email.Location = new System.Drawing.Point(175, 297);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(100, 22);
             this.txt_email.TabIndex = 82;
             // 
             // txt_ID
             // 
-            this.txt_ID.Location = new System.Drawing.Point(177, 29);
+            this.txt_ID.Location = new System.Drawing.Point(175, 60);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 22);
             this.txt_ID.TabIndex = 81;
@@ -97,16 +92,16 @@
             // lbl_Phone
             // 
             this.lbl_Phone.AutoSize = true;
-            this.lbl_Phone.Location = new System.Drawing.Point(35, 309);
+            this.lbl_Phone.Location = new System.Drawing.Point(33, 340);
             this.lbl_Phone.Name = "lbl_Phone";
-            this.lbl_Phone.Size = new System.Drawing.Size(46, 16);
+            this.lbl_Phone.Size = new System.Drawing.Size(85, 16);
             this.lbl_Phone.TabIndex = 80;
-            this.lbl_Phone.Text = "Phone";
+            this.lbl_Phone.Text = "Số điện thoại";
             // 
             // lbl_email
             // 
             this.lbl_email.AutoSize = true;
-            this.lbl_email.Location = new System.Drawing.Point(35, 269);
+            this.lbl_email.Location = new System.Drawing.Point(33, 300);
             this.lbl_email.Name = "lbl_email";
             this.lbl_email.Size = new System.Drawing.Size(41, 16);
             this.lbl_email.TabIndex = 79;
@@ -115,7 +110,7 @@
             // lbl_ID
             // 
             this.lbl_ID.AutoSize = true;
-            this.lbl_ID.Location = new System.Drawing.Point(35, 29);
+            this.lbl_ID.Location = new System.Drawing.Point(33, 60);
             this.lbl_ID.Name = "lbl_ID";
             this.lbl_ID.Size = new System.Drawing.Size(20, 16);
             this.lbl_ID.TabIndex = 78;
@@ -123,28 +118,28 @@
             // 
             // dtpDoB
             // 
-            this.dtpDoB.Location = new System.Drawing.Point(159, 187);
+            this.dtpDoB.Location = new System.Drawing.Point(157, 218);
             this.dtpDoB.Name = "dtpDoB";
             this.dtpDoB.Size = new System.Drawing.Size(200, 22);
             this.dtpDoB.TabIndex = 77;
             // 
             // txtIdentifyNum
             // 
-            this.txtIdentifyNum.Location = new System.Drawing.Point(177, 67);
+            this.txtIdentifyNum.Location = new System.Drawing.Point(175, 98);
             this.txtIdentifyNum.Name = "txtIdentifyNum";
             this.txtIdentifyNum.Size = new System.Drawing.Size(100, 22);
             this.txtIdentifyNum.TabIndex = 76;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(177, 224);
+            this.txtAddress.Location = new System.Drawing.Point(175, 255);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(100, 22);
             this.txtAddress.TabIndex = 75;
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(177, 105);
+            this.txtFullName.Location = new System.Drawing.Point(175, 136);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(100, 22);
             this.txtFullName.TabIndex = 74;
@@ -152,16 +147,16 @@
             // lblDoB
             // 
             this.lblDoB.AutoSize = true;
-            this.lblDoB.Location = new System.Drawing.Point(7, 192);
+            this.lblDoB.Location = new System.Drawing.Point(5, 223);
             this.lblDoB.Name = "lblDoB";
             this.lblDoB.Size = new System.Drawing.Size(132, 16);
             this.lblDoB.TabIndex = 73;
-            this.lblDoB.Text = "Ngay thang nam sinh";
+            this.lblDoB.Text = "Ngày tháng năm sinh";
             // 
             // lblIdentifyNum
             // 
             this.lblIdentifyNum.AutoSize = true;
-            this.lblIdentifyNum.Location = new System.Drawing.Point(35, 73);
+            this.lblIdentifyNum.Location = new System.Drawing.Point(33, 104);
             this.lblIdentifyNum.Name = "lblIdentifyNum";
             this.lblIdentifyNum.Size = new System.Drawing.Size(47, 16);
             this.lblIdentifyNum.TabIndex = 72;
@@ -170,52 +165,57 @@
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(35, 227);
+            this.lblAddress.Location = new System.Drawing.Point(33, 258);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(48, 16);
+            this.lblAddress.Size = new System.Drawing.Size(47, 16);
             this.lblAddress.TabIndex = 71;
-            this.lblAddress.Text = "Dia chi";
+            this.lblAddress.Text = "Địa chỉ";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(35, 111);
+            this.lblName.Location = new System.Drawing.Point(33, 142);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(70, 16);
+            this.lblName.Size = new System.Drawing.Size(64, 16);
             this.lblName.TabIndex = 70;
-            this.lblName.Text = "Ho va Ten";
+            this.lblName.Text = "Họ và tên";
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(322, 386);
+            this.btnEdit.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnEdit.Location = new System.Drawing.Point(291, 379);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.Size = new System.Drawing.Size(75, 30);
             this.btnEdit.TabIndex = 69;
-            this.btnEdit.Text = "Sua";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Text = "Sửa";
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(173, 386);
+            this.btnDelete.BackColor = System.Drawing.Color.IndianRed;
+            this.btnDelete.Location = new System.Drawing.Point(173, 379);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(75, 30);
             this.btnDelete.TabIndex = 68;
-            this.btnDelete.Text = "Xoa";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(53, 386);
+            this.btnAdd.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnAdd.Location = new System.Drawing.Point(53, 379);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(75, 30);
             this.btnAdd.TabIndex = 67;
-            this.btnAdd.Text = "Them";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Text = "Thêm";
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // gv1
             // 
+            this.gv1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.gv1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gv1.Location = new System.Drawing.Point(386, 57);
+            this.gv1.Location = new System.Drawing.Point(384, 88);
             this.gv1.Name = "gv1";
             this.gv1.RowHeadersWidth = 51;
             this.gv1.RowTemplate.Height = 24;
@@ -226,17 +226,17 @@
             // lbl_Diem
             // 
             this.lbl_Diem.AutoSize = true;
-            this.lbl_Diem.Location = new System.Drawing.Point(394, 330);
+            this.lbl_Diem.Location = new System.Drawing.Point(392, 361);
             this.lbl_Diem.Name = "lbl_Diem";
-            this.lbl_Diem.Size = new System.Drawing.Size(39, 16);
+            this.lbl_Diem.Size = new System.Drawing.Size(56, 16);
             this.lbl_Diem.TabIndex = 87;
-            this.lbl_Diem.Text = "Diem";
+            this.lbl_Diem.Text = "Điểm số";
             this.lbl_Diem.Visible = false;
             this.lbl_Diem.VisibleChanged += new System.EventHandler(this.lbl_Diem_VisibleChanged);
             // 
             // txt_Diem
             // 
-            this.txt_Diem.Location = new System.Drawing.Point(472, 324);
+            this.txt_Diem.Location = new System.Drawing.Point(471, 358);
             this.txt_Diem.Name = "txt_Diem";
             this.txt_Diem.Size = new System.Drawing.Size(100, 22);
             this.txt_Diem.TabIndex = 88;
@@ -250,21 +250,40 @@
             "Male",
             "Female",
             "Unknown"});
-            this.cb_gioitinh.Location = new System.Drawing.Point(173, 147);
+            this.cb_gioitinh.Location = new System.Drawing.Point(171, 178);
             this.cb_gioitinh.Name = "cb_gioitinh";
             this.cb_gioitinh.Size = new System.Drawing.Size(121, 24);
             this.cb_gioitinh.TabIndex = 89;
+            // 
+            // mtxt_phone
+            // 
+            this.mtxt_phone.Location = new System.Drawing.Point(175, 340);
+            this.mtxt_phone.Name = "mtxt_phone";
+            this.mtxt_phone.Size = new System.Drawing.Size(121, 22);
+            this.mtxt_phone.TabIndex = 90;
+            this.mtxt_phone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Font = new System.Drawing.Font("Rage Italic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.Location = new System.Drawing.Point(247, 11);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(324, 46);
+            this.lbl_title.TabIndex = 91;
+            this.lbl_title.Text = "Personal Information";
             // 
             // UCThongtin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbl_title);
+            this.Controls.Add(this.mtxt_phone);
             this.Controls.Add(this.cb_gioitinh);
             this.Controls.Add(this.txt_Diem);
             this.Controls.Add(this.lbl_Diem);
             this.Controls.Add(this.btn_reload);
             this.Controls.Add(this.lbl_sex);
-            this.Controls.Add(this.txt_phone);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.txt_ID);
             this.Controls.Add(this.lbl_Phone);
@@ -295,7 +314,6 @@
 
         public System.Windows.Forms.Button btn_reload;
         public System.Windows.Forms.Label lbl_sex;
-        public System.Windows.Forms.TextBox txt_phone;
         public System.Windows.Forms.TextBox txt_email;
         public System.Windows.Forms.TextBox txt_ID;
         public System.Windows.Forms.Label lbl_Phone;
@@ -316,5 +334,7 @@
         public System.Windows.Forms.Label lbl_Diem;
         public System.Windows.Forms.TextBox txt_Diem;
         public System.Windows.Forms.ComboBox cb_gioitinh;
+        public System.Windows.Forms.MaskedTextBox mtxt_phone;
+        private System.Windows.Forms.Label lbl_title;
     }
 }
